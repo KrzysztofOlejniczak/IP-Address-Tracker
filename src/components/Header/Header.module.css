@@ -1,0 +1,33 @@
+.header {
+  display: block;
+  width: 375px;
+  height: 300px;
+  background-image: url("../../images/pattern-bg-mobile.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.title {
+  padding-top: 26px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.23px;
+  color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    background-image: url("../../images/pattern-bg-desktop.png");
+    width: 1440px;
+    height: 280px;
+  }
+
+  .title {
+    padding-top: 33px;
+    font-size: 32px;
+    letter-spacing: -0.29px;
+  }
+}
