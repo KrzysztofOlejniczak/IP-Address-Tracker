@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./SearchForm.module.css";
-import SearchIcon from "../../images/icon-search.svg";
+import SearchIcon from "../../images/icon-arrow.svg";
 
 const SearchForm = () => {
   return (
@@ -13,7 +13,7 @@ const SearchForm = () => {
         placeholder="Search for any IP address or domain"
       />
       <button type="submit" className={style.btn}>
-        <img src={SearchIcon} />
+        <img src={SearchIcon} alt="Search" />
       </button>
     </form>
   );
