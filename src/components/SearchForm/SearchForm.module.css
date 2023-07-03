@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 29px;
+  width: 327px;
+  height: 58px;
+}
+
+.input {
+  width: calc(100% - 48px - 58px);
+  height: calc(100% - 37px);
+  font-size: 18px;
+  color: #2c2c2c;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-style: none;
+  padding: 18px 24px 19px;
+
+  &::placeholder {
+    color: transparent;
+  }
+}
+.btn {
+  width: 58px;
+  height: 58px;
+  background-color: black;
+  border: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media screen and (min-width: 1440px) {
+  .form {
+    width: 555px;
+  }
+
+  .input {
+    &::placeholder {
+      color: inherit;
+    }
+  }
+}
