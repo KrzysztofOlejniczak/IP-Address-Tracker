@@ -30,10 +30,9 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ip-address-tracker-omega-six.vercel.app](https://ip-address-tracker-omega-six.vercel.app)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@KrzysztofOlejniczak](https://www.frontendmentor.io/profile/KrzysztofOlejniczak)
 - LinkedIn - [Krzysztof Olejniczak](https://www.linkedin.com/in/krzysztof-olejniczak-0b1629111/)
