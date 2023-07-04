@@ -1,31 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Map.module.css";
 import SvgMarker from "../../images/icon-location.svg";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import { Icon } from "leaflet";
+import { Map, Marker } from "pigeon-maps";
 import PropTypes from "prop-types";
 
 const MapPanel = ({ point = ["0", "0"] }) => {
-  const mapPosition = point;
-  const svgIcon = new Icon({
-    iconUrl: SvgMarker,
-    iconAnchor: [23, 56],
-  });
+  const [center, setCenter] = useState(point);
+
+  useEffect(() => {
+    setCenter(point);
+  }, [point]);
 
   return (
     <div className={style.map}>
-      <MapContainer
-        center={mapPosition}
-        zoom={13}
-        scrollWheelZoom={false}
-        zoomControl={false}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={mapPosition} icon={svgIcon} />
-      </MapContainer>
+      <Map center={center} defaultZoom={11}>
+        <Marker width={50} anchor={center}>
+          <img src={SvgMarker} alt="Marker" />
+        </Marker>
+      </Map>
     </div>
   );
 };
